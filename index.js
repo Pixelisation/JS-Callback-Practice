@@ -2,6 +2,28 @@ const inventory = newInventory()
 move(inventory).to(0, 0)
 
 const character = newImage('assets/green-character/static.gif')
+let directiion = null;
+let x = 100;
+let y = 250;
+
+function moveCharacter(){
+  if(directiion === 'west'){
+    x = x - 1
+  }
+  if(directiion === 'north'){
+    y = y + 1
+  }
+  if(directiion === 'east'){
+    x = x + 1
+  }
+  if(directiion === 'south'){
+    y = y - 1
+  }
+  character.style.left = x + 'px'
+  character.style.bottom = y + 'px'
+}
+
+
 move(character).to(100, 250)
 
 
