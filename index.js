@@ -43,11 +43,9 @@ document.addEventListener('keydown', function(e){
 document.addEventListener('keyup', function(e){
   direction = null
 })
-
+/* what is null doing in the code above */
 
 move(character).to(100, 250)
-
-
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
 move(newImage('assets/pine-tree.png')).to(450, 350)
